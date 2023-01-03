@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de senha</title>
+
+  <style>
+    .wrapper {
+      padding: 38px 24px;
+      text-align: center;
+    }
+    .title {
+      font-size: 36px;
+      margin-bottom: 26px;
+    }
+    .form {
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+    .form button {
+      height: 40px;
+      background: #69be5a;
+      color: #ffffff;
+    }
+    #newPassword {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <h1 class="title">Gerador de senha</h1>
+
+    <div class="form">
+      <label>Qual o tamanho da senha?</label>
+      <input type="number" id="pass" min="0" max="15" />
+      <button onclick="generatePass()">Gerar Senha</button>
+    </div>
+
+    <div>
+      <span id="newPassword"></span>
+    </div>
+  </div>
+  
+</body>
+<script src="./src/script.js"></script>
+</html>
